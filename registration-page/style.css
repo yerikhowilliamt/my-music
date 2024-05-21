@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #151515;
+  color: #FFFFFF;
+}
+
+.logo-img {
+  width: 56px;
+  height: 56px;
+}
+
+h3 {
+  font-family: "Urbanist";
+  font-size: 32px;
+}
+
+#header {
+  background-color: #3D3759;
+  display: flex;
+  height: 8vh;
+  background-color: #2A2A2A;
+}
+
+.header-logo {
+  width: 272px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: #2A2A2A;
+}
+
+#registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.registration-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 6em auto;
+  width: 450px;
+  height: 628px;
+  padding: 36px;
+  border-radius: 12px;
+  background-color: #424141;
+}
+
+.card-container {
+  gap: 32px;
+}
+
+.registration-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.registration-logo {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+
+.registration-header h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25.2px;
+}
+
+.registration-header p { 
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: .2px;
+  color: rgba(193, 194, 196, 1);
+}
+
+.form-registration {
+  width: 100%;
+}
+
+.form-registration p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+
+.input-registraion {
+  border: 1px solid black;
+}
+
+.name,
+.email,
+.password,
+.confirmed-password {
+  border-bottom: 2px solid rgba(231, 227, 252, 0.23);
+  position: relative;
+}
+
+.name label,
+.email label,
+.password label,
+.confirmed-password label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+.name input,
+.email input,
+.password input,
+.confirmed-password input {
+  width: 100%;
+  height: 49px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
+.policy-terms {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.policy-terms label {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background-color: #eee;
+  border: 1px solid #151515;
+  border-radius: 2px;
+  appearance: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #151515;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 4px;
+  width: 4px;
+  height: 10px;
+  border: 3px solid transparent;
+  border-radius: 1px;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg) scale(1);
+}
+
+input[type="checkbox"]:checked:before {
+  border-color: #FFFFFF;
+}
+
+.btn-registration {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #151515;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-registration:hover {
+  cursor: pointer;
+}
+
+.to-loginpage {
+  padding: 10px 0;
+}
+
+.to-loginpage a {
+  color: #FEF4CBCC;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+.divider {
+  width: 100%;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-text {
+  width: 100%;
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.mid-text::before, 
+.mid-text::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #000;
+}
+
+.btn-signup-form {
+  padding: 10px 0;
+}
+
+.btn-signup-google {
+  background-color: #FEF4CBCC;
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #151515;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22.4px;
+  gap: 8px;
+  border-style: none;
+  border-radius: 8px;
+}
+
+.btn-signup-google:hover {
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* phone */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 75%;
+  }
+
+  #header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-logo {
+    padding: 16px 24px;
+  }
+
+  .registration-container {
+    width: 85%;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+  .registration-header {
+    width: 100%;
+  }
+
+  .form-registration {
+    width: 100%;
+  }
+
+  .confirmed-password {
+    display: none;
+  }
+
+  .form-registration p {
+    font-size: 100%;
+  }
+
+  .divider {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .btn-signup-google {
+    width: 100%;
+  }
+}
